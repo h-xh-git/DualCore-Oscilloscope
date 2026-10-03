@@ -1,0 +1,8 @@
+{
+    "name": "Osc Proto",
+    "version": "1.0.0",
+    "description": "Dual-core oscilloscope UART framing protocol (ESP32 side)",
+    "dependencies": {
+        "osc_link": {}
+    }
+}

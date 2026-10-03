@@ -1,0 +1,6 @@
+{
+    "name": "osc_wifi",
+    "version": "1.0.0",
+    "description": "WiFi credential store (built-in defaults + NVS override) for the dual-core oscilloscope",
+    "frameworks": "arduino"
+}

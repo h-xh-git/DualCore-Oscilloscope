@@ -1,0 +1,3 @@
+# PlatformIO 构建产物（根目录 .gitignore 已覆盖同名规则，这里保留一份
+# 是为了让 esp32/ 单独被当作 PlatformIO 工程打开时也生效）
+.pio/

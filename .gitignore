@@ -1,0 +1,40 @@
+# ============================================================
+#  DualCore-Oscilloscope — 版本控制忽略规则
+# ============================================================
+
+# ---------- 构建产物：PlatformIO（ESP32-S3 连接核） ----------
+esp32/.pio/
+.pio/
+
+# ---------- 构建产物：Keil MDK5（STM32F407 实时核） ----------
+STM32F407_ProjectTemplate/project/MDK(V5)/Objects/
+STM32F407_ProjectTemplate/project/MDK(V5)/Listings/
+STM32F407_ProjectTemplate/project/MDK(V5)/RTE/
+STM32F407_ProjectTemplate/project/MDK(V5)/*.bak
+STM32F407_ProjectTemplate/project/MDK(V5)/*.dep
+STM32F407_ProjectTemplate/project/MDK(V5)/*.uvguix.*
+STM32F407_ProjectTemplate/project/MDK(V5)/JLinkLog.txt
+STM32F407_ProjectTemplate/project/MDK(V5)/JLinkSettings.ini
+
+# 注：EventRecorderStub.scvd 与 DebugConfig/*.dbgconf 虽由 Keil 生成，
+#     但体积很小且被工程文件引用，为了「克隆下来就能直接编译」**故意保留**。
+
+# ---------- IDE / 编辑器 ----------
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---------- Python（tools/ 下的辅助脚本） ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- 操作系统 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 注意：仓库根目录的 ui_preview.png 是被 README 引用的界面截图，
+#       虽然由 tools/preview_ui.py 生成，但这里**故意不忽略**，需要入库。

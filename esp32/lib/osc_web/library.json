@@ -1,0 +1,6 @@
+{
+  "name": "osc_web",
+  "version": "1.0.0",
+  "description": "WiFi AP + WebServer + OTA for the dual-core oscilloscope",
+  "frameworks": "arduino"
+}
